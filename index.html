@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ShoreSquad — rally your crew, track weather, and hit the next beach cleanup with our dope map app." />
+    <title>ShoreSquad — Rally your crew & clean beaches</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="brand">ShoreSquad</h1>
+        <nav class="main-nav" aria-label="Primary">
+          <button class="menu-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+          <ul id="nav-list" class="nav-list">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#join">Join</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero" id="hero">
+        <div class="hero-content">
+          <h2 class="tagline">Rally your crew, check the weather, and clean up beaches together.</h2>
+          <p class="lead">ShoreSquad makes eco-action social — plan cleanups, track conditions, and mark spots on the map so your squad can show up and make a difference.</p>
+          <div class="cta-row">
+            <button id="create-event" class="btn btn-primary">Create a Cleanup</button>
+            <button id="explore-map" class="btn btn-outline">Explore Map</button>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="map-placeholder">Map placeholder — interactive map goes here</div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <h3>What ShoreSquad does</h3>
+        <div class="feature-list">
+          <article>
+            <h4>Plan together</h4>
+            <p>Create events, invite friends, and coordinate pickups.</p>
+          </article>
+          <article>
+            <h4>Smart weather</h4>
+            <p>Built-in weather checks help you find good windows to clean.</p>
+          </article>
+          <article>
+            <h4>Map intelligence</h4>
+            <p>Pin hotspots, see user-suggested problem areas, and track progress.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="map" class="map-section">
+        <h3>Community Map</h3>
+        <div id="mapApp" class="map-app" aria-label="Community map">
+          <p class="map-fallback">Interactive map isn't available in this starter — it will live here when integrated.</p>
+        </div>
+      </section>
+
+      <section id="join" class="join">
+        <h3>Join a cleanup</h3>
+        <form id="joinForm" class="join-form" aria-label="Join a cleanup">
+          <label for="name">Your name</label>
+          <input id="name" name="name" required placeholder="Alex" />
+          <label for="email">Email (optional)</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" />
+          <label for="notes">Notes</label>
+          <textarea id="notes" name="notes" rows="3" placeholder="I can bring gloves and extra trash bags"></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Join the crew</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> ShoreSquad — Built for fun & impact.</small>
+      </div>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
