@@ -38,5 +38,5 @@ document.addEventListener('DOMContentLoaded', () => {
 // NOTE: When integrating weather APIs, prefer metric units by default:
 // - Temperature: degrees Celsius (°C)
 // - Distance / wind speed: kilometers (km) / km/h
-// This keeps the app consistent for the target audience and avoids mixing metric/imperial units.
+// This keeps the app consistent for the target audience and avoids mixing metric and non-metric units.
 // and initialized only when the user needs them to keep first load fast.
