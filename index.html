@@ -33,7 +33,21 @@
           </div>
         </div>
         <div class="hero-visual" aria-hidden="true">
-          <div class="map-placeholder">Map placeholder — interactive map goes here</div>
+            <!-- Embedded Google Map for the next cleanup spot (Pasir Ris) -->
+            <div class="map-embed-wrapper" aria-hidden="false">
+              <!--
+                Using Maps embed via query coordinates. The label "Next Cleanup" is added
+                via the query string so the pin shows this text on supported devices.
+              -->
+              <iframe
+                title="ShoreSquad — Next Cleanup: Pasir Ris (Next Cleanup)"
+                src="https://maps.google.com/maps?q=1.381497,103.955574+(Next+Cleanup)&z=17&output=embed"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <p class="map-caption">Map: Next Cleanup • Pasir Ris — Street View: 1.381497, 103.955574</p>
+            </div>
         </div>
       </section>
 
