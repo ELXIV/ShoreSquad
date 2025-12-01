@@ -18,7 +18,16 @@ Files
 - `manifest.json` — basic web app manifest
 - `sw.js` — tiny service worker starter (demo only)
 
+- Add a real map (Leaflet / Mapbox), lazy-load it
+- Integrate a weather API for event planning
+- Add backend (Supabase / Netlify Functions) to persist events and attendees
 Next steps
+- Add a real map (Leaflet / Mapbox), lazy-load it
+- Integrate a weather API for event planning (use metric: °C for temperature, km/h for wind speeds)
+- Add backend (Supabase / Netlify Functions) to persist events and attendees
+
+Units & localization
+- This starter uses metric units by default: temperatures are shown in degrees Celsius (°C), distances in kilometres (km) and wind speeds in km/h. When adding third-party APIs make sure to request metric units and present them explicitly in UI.
 - Add a real map (Leaflet / Mapbox), lazy-load it
 - Integrate a weather API for event planning
 - Add backend (Supabase / Netlify Functions) to persist events and attendees

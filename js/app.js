@@ -35,4 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Keep this file lean — real map & weather integrations should be loaded lazily
+// NOTE: When integrating weather APIs, prefer metric units by default:
+// - Temperature: degrees Celsius (°C)
+// - Distance / wind speed: kilometers (km) / km/h
+// This keeps the app consistent for the target audience and avoids mixing metric/imperial units.
 // and initialized only when the user needs them to keep first load fast.

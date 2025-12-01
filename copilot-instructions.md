@@ -1,6 +1,7 @@
 These are assistant guidance files used when iterating on the project.
 
-Keep the starter focused on fast first loads and progressive enhancement:
+- Keep the starter focused on fast first loads and progressive enhancement:
 - Lazy-load heavy SDKs (map, weather) when user opens the map or requests details
 - Keep the initial JS small and unobtrusive
 - Add accessibility helpers and keyboard navigation early
+ - Use metric units for weather & distances (°C and km / km/h) and make units clear in the UI
