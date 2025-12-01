@@ -43,6 +43,16 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
 .map-embed-wrapper{width:100%;height:100%;display:flex;flex-direction:column;align-items:stretch}
 .map-embed-wrapper iframe{width:100%;height:360px;border-radius:8px;border:0;display:block}
 .map-embed-wrapper .map-caption{font-size:0.85rem;color:var(--muted);padding:0.5rem 0 0 0}
+
+/* forecast styles */
+.forecast-section{padding:2rem 0}
+.forecast-container{display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;margin-top:0.5rem}
+.forecast-card{background:var(--surface);padding:0.75rem;border-radius:8px;box-shadow:0 6px 16px rgba(2,48,71,0.06);display:flex;flex-direction:column;gap:0.5rem;min-height:120px}
+.forecast-card .date{font-weight:700;color:var(--accent-4)}
+.forecast-card .summary{font-size:0.95rem;color:var(--muted)}
+.forecast-card .temp{font-size:1.05rem;font-weight:700}
+.forecast-card .extra{font-size:0.85rem;color:var(--muted)}
+.forecast-loading{color:var(--muted)}
 .join{padding:2rem 0}
 .join-form{display:grid;gap:0.5rem;max-width:520px}
 .join-form input,.join-form textarea{padding:0.55rem;border-radius:6px;border:1px solid rgba(2,48,71,0.08)}
@@ -53,6 +63,7 @@ body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica
 @media (max-width:900px){
   .hero{grid-template-columns:1fr;}
   .feature-list{grid-template-columns:1fr}
+  .forecast-container{grid-template-columns:repeat(2,1fr)}
   .menu-toggle{display:inline-block;background:transparent;border:1px solid rgba(255,255,255,0.15);color:white;padding:0.4rem;border-radius:6px}
   .nav-list{display:none}
 }
